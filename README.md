@@ -9,10 +9,12 @@ Consider a graph of interconnected **Node** objects, which contain a name and li
 
 For example, a very simple case is a node A with a link to node B. The link contains attributes "a", "b", and "e":
 
+![Simple node link example](images/nodelink_simple.png)
+
 ## Problem
 
 Implement the **GetAttributes()** method in the **GraphNode** class. This method must traverse through all paths between two nodes and accumulate all attributes while traversing on the paths that reach the target node. Any cyclic paths should be excluded from the traversal set. The returned attributes should be an accumulated set of unique attributes encountered on the various paths to the target node, with no duplicates.
 
-A few unit tests have been provided to verify the accuracy of your implemenation. Feel free to add your own unit tests.
+A few unit tests have been provided to verify the accuracy of your implemenation. The unit test project generates a more complex graph instance in order to run traversal tests on. Feel free to add your own unit tests.
 
 ## Instructions
